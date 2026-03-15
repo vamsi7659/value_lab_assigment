@@ -15,7 +15,7 @@ func CreateAccount(c *fiber.Ctx) error {
             "error": "Invalid request body",
         })
     }
-
+fmt.Println("hi")
     _, err := database.DB.Exec(
         "INSERT INTO accounts (account_id, balance) VALUES ($1, $2)",
         account.AccountID, account.InitialBalance,
