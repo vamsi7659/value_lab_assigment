@@ -26,7 +26,7 @@ fmt.Println("hi")
         os.Getenv("DB_PASSWORD"),
         os.Getenv("DB_NAME"),
     )
-
+fmt.Println("veerendra")
     DB, err = sql.Open("postgres", psqlInfo)
     if err != nil {
         log.Fatal(err)
