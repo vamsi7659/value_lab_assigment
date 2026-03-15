@@ -17,7 +17,7 @@ func Connect() {
     if err != nil {
         log.Fatal("Error loading .env file")
     }
-
+fmt.Println("hi")
     psqlInfo := fmt.Sprintf(
         "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
         os.Getenv("DB_HOST"),
